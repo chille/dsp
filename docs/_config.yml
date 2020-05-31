@@ -1,0 +1,11 @@
+title: DSP
+description: Multipurpose DSP system for professional audio
+baseurl: "/dsp"
+url: "https://chille.github.io"
+github_username: chille
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
