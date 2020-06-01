@@ -1,0 +1,68 @@
+PARAMS="-flatten -resize 24x24 -shave 1x1 -bordercolor black -border 1"
+
+COLOR="#bbffcc"
+convert -background $COLOR troll.svg -resize 22x22 -bordercolor black -border 1x4 troll.png
+
+# Signal path
+COLOR="#ccffff"
+convert -background $COLOR chorus.svg $PARAMS chorus.png
+
+# Signal path
+COLOR="#ffffcc"
+convert -background $COLOR selector.svg $PARAMS selector.png
+convert -background $COLOR crosspoint.svg $PARAMS crosspoint.png
+convert -background $COLOR mixer.svg $PARAMS mixer.png
+
+# Control
+COLOR="#ffccff"
+convert -background $COLOR quantizer.svg $PARAMS quantizer.png
+
+COLOR="#bbbbcc"
+convert -background $COLOR slider.svg $PARAMS slider.png
+convert -background $COLOR knob.svg   $PARAMS knob.png
+convert -background $COLOR dpm.svg    $PARAMS dpm.png
+convert -background $COLOR button.svg $PARAMS button.png
+convert -background $COLOR graph.svg  $PARAMS graph.png
+convert -background $COLOR adsr.svg   $PARAMS adsr.png
+
+COLOR="#bbcccc"
+convert -background $COLOR lp.svg   $PARAMS lp.png
+convert -background $COLOR bp.svg   $PARAMS bp.png
+convert -background $COLOR hp.svg   $PARAMS hp.png
+convert -background $COLOR crossover.svg $PARAMS crossover.png
+convert -background $COLOR graphic.svg   $PARAMS graphic.png
+
+COLOR="#ccccbb"
+convert -background $COLOR compressor.svg $PARAMS compressor.png
+convert -background $COLOR limiter.svg $PARAMS limiter.png
+convert -background $COLOR expander.svg $PARAMS expander.png
+convert -background $COLOR gate.svg $PARAMS gate.png
+
+COLOR="#ccbbcc"
+convert -background $COLOR and.svg    $PARAMS and.png
+convert -background $COLOR nand.svg   $PARAMS nand.png
+convert -background $COLOR or.svg     $PARAMS or.png
+convert -background $COLOR nor.svg    $PARAMS nor.png
+convert -background $COLOR xor.svg    $PARAMS xor.png
+convert -background $COLOR not.svg    $PARAMS not.png
+convert -background $COLOR xnor.svg   $PARAMS xnor.png
+
+COLOR="#bbffcc"
+convert -background $COLOR sin.svg    $PARAMS sin.png
+convert -background $COLOR square.svg $PARAMS square.png
+convert -background $COLOR tri.svg    $PARAMS tri.png
+convert -background $COLOR saw.svg    $PARAMS saw.png
+convert -background $COLOR random.svg $PARAMS random.png
+convert -background $COLOR noise.svg  $PARAMS noise.png
+
+COLOR="#ffbbcc"
+convert -background $COLOR add.svg    $PARAMS add.png
+convert -background $COLOR sub.svg    $PARAMS sub.png
+convert -background $COLOR div.svg    $PARAMS div.png
+convert -background $COLOR mul.svg    $PARAMS mul.png
+convert -background $COLOR sqrt.svg   $PARAMS sqrt.png
+convert -background $COLOR reciprocal.svg $PARAMS reciprocal.png
+convert -background $COLOR invert.svg $PARAMS invert.png
+convert -background $COLOR mod.svg    $PARAMS mod.png
+convert -background $COLOR pow.svg    $PARAMS pow.png
+convert -background $COLOR delay.svg  $PARAMS delay.png
